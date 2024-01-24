@@ -1,15 +1,18 @@
 <?php
-$username = $_POST["username"];
-$password = $_POST["password"];
+session_start();
 
-if ($username == "userlsp" && $password == "smkfarmasibjm") {
-    header("Location: home.php");
+// Check if the user is logged in
+if (isset($_SESSION['user_id'])) {
+    // Unset and destroy the session
+    session_unset();
+    session_destroy();
+
+    // Redirect the user to the login page or any other desired location
+    header("Location: index.php"); // Replace 'login.php' with the appropriate URL
+    exit();
 } else {
-    echo "
-    <script>
-        alert('Username atau Password salah');
-        window.location.href = 'login.php';
-    </script>";
+    // If the user is not logged in, redirect them to the login page
+    header("Location: index.php"); // Replace 'login.php' with the appropriate URL
+    exit();
 }
-
 ?>

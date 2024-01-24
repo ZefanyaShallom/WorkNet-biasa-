@@ -8,8 +8,7 @@ if ($username == "admin" && $password == "admin") {
     echo "
     <script>
         alert('Username atau Password salah');
-        window.location.href = 'login.php';
+        window.location.href = 'index.php';
     </script>";
 }
-
 ?>

@@ -1,0 +1,98 @@
+ /* Reset default margin and padding */
+ * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+/* Style for the navigation bar */
+nav {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    margin-right: 35px;
+}
+
+li {
+    margin-right: 40px;
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+}   
+.fa-user{
+    font-size: 25px;
+}
+
+.card-area {
+    /* border: 1px solid red; */
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.card {
+    background-color: #ababab;
+    border: 1px;
+    width: 200px;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 4px;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.sidebar {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    top: 194px;
+    left: 0;
+    background-color: #F2F2F2;
+    padding-top: 0;
+}
+
+/* Style untuk link dalam sidebar */
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #262626;
+    display: block;
+}
+
+/* Hover efek pada link sidebar */
+.sidebar a:hover {
+    background-color: #D9D9D9;
+}
+
+h5{
+    padding: 10px;
+    margin: 5px;
+    color: #262626;
+}
+
+main {
+    float: right; /* Mengatur elemen konten untuk muncul di sebelah kanan sidebar */
+    width: 1045px;   /* Atur lebar konten sesuai keinginan Anda */
+    height: 180px;
+    padding: 20px;
+    background-color: #737373;
+    position: relative;
+}

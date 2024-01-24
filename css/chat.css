@@ -1,0 +1,106 @@
+ /* Reset default margin and padding */
+ * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+/* Style for the navigation bar */
+nav {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    margin-right: 35px;
+}
+
+li {
+    margin-right: 40px;
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+}   
+.fa-user{
+    font-size: 25px;
+}
+
+.card-area {
+    /* border: 1px solid red; */
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.card {
+    background-color: #ababab;
+    border: 1px;
+    width: 200px;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 4px;
+    flex-direction: column;
+    z-index: 1;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #F2F2F2;
+    color: #fff;
+    width: 300px; /* Mengatur lebar sidebar */
+    height: 100%; /* Mengisi tinggi sesuai dengan tinggi layar */
+    position: fixed; /* Membuat sidebar tetap terlihat saat menggulir */
+    top: px; /* Mengatur posisi vertikal ke bagian atas */
+    left: 0; /* Mengatur posisi horizontal ke bagian kiri */
+    display: flex;
+    flex-direction: column; /* Mengatur tampilan menjadi vertikal */
+    padding: 20px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #262626;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.search-bar input {
+    border: none;
+    background: transparent;
+    border-radius: 5px;
+    color: #fff;
+    width: 100%;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    display: block;
+    color: #262626;
+    background-color: #8D8D8D;
+    padding: 10px ;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.sidebar a:hover {
+    background-color: #555;
+}

@@ -12,37 +12,49 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 40px;
+    padding: 20px 30px;
 }
 
 ul {
     list-style: none;
     display: flex;
-    gap: 5px;
+    margin-right: 35px;
 }
 
 li {
-    margin-right: 23px;
+    margin-right: 40px;
     margin-top: 10px;
 }
 
 a {
     text-decoration: none;
     color: #fff;
-    font-size: 20px;
+    font-size: 22px;
 }   
 .fa-user{
     font-size: 25px;
 }
+
+.card-area {
+    /* border: 1px solid red; */
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-left: 20px;
+}
+
 .card {
     background-color: #ababab;
-    border: 1px ;
+    border: 1px;
     width: 200px;
-    height: 100px;
+    height: max-content;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
     border-radius: 4px;
     flex-direction: column;
+    z-index: 1;
 }
